@@ -101,56 +101,69 @@ textarea {
 
    header,
    footer {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
    }
 
    /***** Header Styles *****/
 
-   header {
-
-   }
 
    header .content-wrapper {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 15px;
+    margin: 0;
    }
 
    .header-divider {
-
+    flex-basis: 100%;
    }
 
    header nav {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 60%;
+    padding-right: 40px;
    }
 
    header nav ul {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
+     flex-basis: 44%;
+   }
+
+   header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
    }
 
    /***** Mobile Styles - Homepage *****/
+   .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-basis: 90%;
+      padding: 15px;
+   }
 
    .hero-area {
      display: flex;
+     width: 60%;
      justify-content: center;
-     align-items: center;
      flex-flow: row wrap;
+     padding-left: 60px;
    }
 
    aside {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
    }
 
    .features {
@@ -161,32 +174,45 @@ textarea {
    }
 
    .features .features-items {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+   }
+
+   .features article {
+      flex-basis: 55%;
+      margin: 75px;
+   }
+
+   .features p {
+      margin: 0;
    }
 
    .reviews {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+   }
+
+   .reviews h3 {
+    flex-basis: 83%;
    }
 
    /***** Mobile Styles - About *****/
    .mission {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-flow: row wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
    }
 
    .contact-section {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
    }
 
     /***** Mobile Styles - FAQ *****/
@@ -202,25 +228,40 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-flow: row wrap; 
+      flex-flow: row wrap; a
     }
 
    /***** Footer *****/
 
    footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
 
+   footer p {
+    margin: 0;
+   }
+
+   footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 60%;
    }
 
    footer .social {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
    footer .social-icons {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
 
