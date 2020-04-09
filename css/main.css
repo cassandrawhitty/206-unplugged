@@ -110,34 +110,34 @@ textarea {
 
    header .content-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-flow: row wrap;
     padding: 15px;
     margin: 0;
    }
 
    .header-divider {
-    flex-basis: 100%;
+    width: 100%;
    }
 
    header nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+     justify-content: flex-end;
+    align-items: flex-end;
     flex-flow: row wrap;
-    flex-basis: 60%;
-    padding-right: 40px;
+    width: 60%;
    }
 
    header nav ul {
-     flex-basis: 44%;
+     width: 44%;
    }
 
    header nav ul li {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: row wrap;
     padding: 30px;
    }
 
@@ -147,16 +147,15 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      flex-basis: 90%;
+      width: 90%;
       padding: 15px;
    }
 
    .hero-area {
      display: flex;
      width: 60%;
-     justify-content: center;
+     justify-content: flex-start;
      flex-flow: row wrap;
-     padding-left: 60px;
    }
 
    aside {
@@ -181,7 +180,7 @@ textarea {
    }
 
    .features article {
-      flex-basis: 55%;
+      width: 55%;
       margin: 75px;
    }
 
@@ -249,7 +248,7 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-basis: 60%;
+    width: 60%;
    }
 
    footer .social {
@@ -353,18 +352,15 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*****TABLET STYLES*****/
+@media only screen and (min-width: 768px) {
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+/*****DESKTOP STYLES*****/
+@media only screen and (min-width: 1200px) {
 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
