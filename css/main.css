@@ -102,7 +102,7 @@ textarea {
    header,
    footer {
     display: flex;
-    flex-flow: row wrap;
+    width: 100%;
    }
 
    /***** Header Styles *****/
@@ -110,35 +110,35 @@ textarea {
 
    header .content-wrapper {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding: 15px;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap;
    }
 
    .header-divider {
-    width: 100%;
+     display: flex;
+     padding: 14px;
+   }
+
+   .hero-area {
+     padding-left: 50px;
+     width: 60%;
    }
 
    header nav {
     display: flex;
-     justify-content: flex-end;
-    align-items: flex-end;
-    flex-flow: row wrap;
-    width: 60%;
+    padding-right: 40px;
    }
 
    header nav ul {
-     width: 44%;
+    display: flex;
+    justify-content: center;
    }
 
    header nav ul li {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-flow: row wrap;
-    padding: 30px;
+    padding: 28px;
    }
 
    /***** Mobile Styles - Homepage *****/
