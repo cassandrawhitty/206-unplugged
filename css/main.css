@@ -102,7 +102,8 @@ textarea {
    header,
    footer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
    }
 
@@ -113,7 +114,6 @@ textarea {
      justify-content: center;
      align-items: center;
      width: 60%;
-     border-style: solid;
    }
 
    .header-divider {
@@ -125,7 +125,6 @@ textarea {
     justify-content: center;
     align-items: center;
     margin: 0;
-    border-style: solid;
    }
 
    header nav {
@@ -142,7 +141,8 @@ textarea {
 
    header nav ul li {
     display: flex;
-    padding: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
    }
 
    /***** Mobile Styles - Homepage *****/
@@ -153,6 +153,7 @@ textarea {
       flex-wrap: wrap;
       width: 90%;
       padding: 15px;
+      margin: 0;
    }
 
    .hero-area {
@@ -359,6 +360,163 @@ textarea {
 /*****TABLET STYLES*****/
 @media only screen and (min-width: 768px) {
 
+/*****GENERAL STYLES*****/
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+
+/*****HEADER*****/
+header, footer {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+}
+
+figure {
+  display: flex;
+  width: 37%;
+  padding-top: 46px;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.header-divider {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  padding-right: 60px;
+  padding-top: 46px;
+}
+
+/*****INFORMATION*****/
+
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description, aside .content-wrapper .form {
+  width: 45%;
+  margin: 0;
+}
+
+.information h1 {
+  width: 55%;
+}
+
+/*****FEATURES*****/
+
+.features article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-basis: 50%;
+}
+
+.features .features-items .two-descriptions {
+  display: flex;
+}
+
+/*****REVIEWS*****/
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews article div {
+  width: 45%;
+}
+
+.reviews .content-wrapper h2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*****FOOTER******/
+footer .content-wrapper {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+}
+
+.copyright {
+  margin: 10px;
+}
+
+/******ABOUT*****/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-itmes: center;
+  flex-flow: row wrap;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-information {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.contact-information div {
+  padding-right: 110px;
+}
+
+/*****FAQ******/
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h1 {
+  width: 100%;
 }
 
 /*****DESKTOP STYLES*****/
