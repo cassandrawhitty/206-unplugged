@@ -102,12 +102,17 @@ textarea {
    header,
    footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
    }
 
    /***** Header Styles *****/
+
+   header {
+     padding: 15px 0;
+   }
 
    figure {
      display:flex;
@@ -116,33 +121,42 @@ textarea {
      width: 60%;
    }
 
-   .header-divider {
-     display: flex;
-   }
-
-   header .content-wrapper {
+      header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
     margin: 0;
+   }
+
+   .header-divider {
+     width: 100%;
+     height: 1px;
+     margin: 10px 0 20px 0;
    }
 
    header nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     margin: 0;
    }
 
    header nav ul {
     display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    justify-content: space-around;
+    width: 100%;
    }
 
    header nav ul li {
     display: flex;
     padding-left: 28px;
     padding-right: 28px;
+   }
+
+   footer {
+     flex-direction: column;
    }
 
    /***** Mobile Styles - Homepage *****/
@@ -173,8 +187,16 @@ textarea {
    .features {
      display: flex;
      justify-content: center;
-     align-items: center;
      flex-flow: row wrap;
+   }
+
+   .features h2 {
+     margin-bottom: 60px;
+   }
+
+    .features article {
+      width: 63%;
+      margin: 30px 0;
    }
 
    .features .features-items {
@@ -182,11 +204,6 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-   }
-
-   .features article {
-      width: 55%;
-      margin: 75px;
    }
 
    .features p {
@@ -360,13 +377,13 @@ textarea {
 /*****TABLET STYLES*****/
 @media only screen and (min-width: 768px) {
 
-/*****GENERAL STYLES*****/
+/*GENERAL STYLE*/
 .content-wrapper {
   max-width: 640px;
   margin: 100px 0;
 }
 
-/*****HEADER*****/
+/*HEADER*/
 header, footer {
   display: flex;
   width: 99%;
@@ -399,7 +416,7 @@ nav {
   padding-top: 46px;
 }
 
-/*****INFORMATION*****/
+/*INFORMATION*/
 
 aside .content-wrapper {
   margin: 50px 0;
@@ -409,8 +426,9 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper .form-description, aside .content-wrapper .form {
-  width: 45%;
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 40%;
   margin: 0;
 }
 
@@ -418,20 +436,21 @@ aside .content-wrapper .form-description, aside .content-wrapper .form {
   width: 55%;
 }
 
-/*****FEATURES*****/
+/*FEATURES*/
 
 .features article {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-flow: column wrap;
   flex-basis: 50%;
 }
 
-.features .features-items .two-descriptions {
-  display: flex;
+.features .features-item-description {
+  width: 50%;
 }
 
-/*****REVIEWS*****/
+/*REVIEWS*/
 .reviews article {
   display: flex;
   justify-content: space-between;
@@ -448,7 +467,7 @@ aside .content-wrapper .form-description, aside .content-wrapper .form {
   align-items: flex-start;
 }
 
-/*****FOOTER******/
+/*FOOTER*/
 footer .content-wrapper {
   width: 100%;
   margin: 100px 0;
@@ -470,7 +489,7 @@ footer {
   margin: 10px;
 }
 
-/******ABOUT*****/
+/*ABOUT*/
 
 .mission-content {
   display: flex;
@@ -505,7 +524,7 @@ footer {
   padding-right: 110px;
 }
 
-/*****FAQ******/
+/*FAQ*/
 
 .faq .content-wrapper {
   justify-content: space-between;
@@ -521,6 +540,37 @@ footer {
 
 /*****DESKTOP STYLES*****/
 @media only screen and (min-width: 1200px) {
+
+.content-wrapper {
+  max-width: 960px;
+}
+
+
+.information h1 {
+  width: 60%;
+}
+
+aside .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 45%;
+}
+
+aside .content-wrapper .form {
+  display: flex;
+  flex-flow: column;
+}
+
+.features h2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 200px;
+  width: 60%;
+}
 
 }
 /* ==========================================================================
