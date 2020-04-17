@@ -503,7 +503,7 @@ footer {
 }
 
 .contact-section .content-wrapper h2 {
-  width: 100%;
+  width: 80%;
 }
 
 .contact-section {
@@ -517,7 +517,8 @@ footer {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact-information div {
@@ -541,23 +542,23 @@ footer {
 /*****DESKTOP STYLES*****/
 @media only screen and (min-width: 1200px) {
 
+/*BASE*/
 .content-wrapper {
   max-width: 960px;
 }
 
-
+/*INFORMATION*/
 .information h1 {
   width: 60%;
 }
 
 aside .content-wrapper {
-  display: flex;
   justify-content: space-around;
 }
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 45%;
+  width: 30%;
 }
 
 aside .content-wrapper .form {
@@ -565,12 +566,26 @@ aside .content-wrapper .form {
   flex-flow: column;
 }
 
+/*FEATURES*/
 .features h2 {
-  display: flex;
-  justify-content: flex-start;
-  padding-right: 200px;
-  width: 60%;
+ width: 90%;
 }
+
+.features article {
+  flex-basis: 33%;
+}
+
+/*REVIEWS*/
+.reviews article div {
+  width: 42%;
+}
+
+/*ABOUT*/
+
+.mission h1, .contact-section .content-wrapper h2 {
+  width: 95%;
+}
+
 
 }
 /* ==========================================================================
