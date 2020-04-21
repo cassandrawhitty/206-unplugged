@@ -133,21 +133,11 @@ textarea {
     line-height: 22px;
    }
 
-   img {
-
-   }
-
-   figure {
-
-   }
 
    address {
     font-style: normal;
    }
 
-   .content-wrapper {
-
-   }
 
    /****** Base Header - Footer Styles *****/
 
@@ -158,6 +148,7 @@ textarea {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #202322;
    }
 
    /***** Header Styles *****/
@@ -173,7 +164,7 @@ textarea {
      width: 60%;
    }
 
-      header .content-wrapper {
+   header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +184,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+    padding-right: 30px;
    }
 
    header nav ul {
@@ -234,7 +226,37 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
+
+   aside h1, aside h4, aside p {
+     color: #e2e3ed;
+   }
+   aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
    .features {
      display: flex;
@@ -267,9 +289,15 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2a423a;
    }
 
-   .reviews h3 {
+    .reviews h2 {
+      color: #e2e3ed;
+    }
+
+   .reviews h3, .reviews p{
+     color: #e2e3ed;
     flex-basis: 83%;
    }
 
@@ -279,6 +307,7 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #527158;
    }
 
    .contact-section {
@@ -286,6 +315,7 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #527158;
    }
 
     /***** Mobile Styles - FAQ *****/
@@ -301,7 +331,8 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-flow: row wrap; a
+      flex-flow: row wrap;
+      background-color: #527158;
     }
 
    /***** Footer *****/
@@ -315,6 +346,11 @@ textarea {
 
    footer p {
     margin: 0;
+    color: #c4c4c4;
+   }
+
+   footer h4 {
+     color: #ffffff;
    }
 
    footer .content-wrapper {
