@@ -267,6 +267,8 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url('img/camping-supplies.jpg') center no-repeat;
+     background-size: cover;
    }
 
    .features h2 {
