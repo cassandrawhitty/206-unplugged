@@ -161,7 +161,7 @@ textarea {
      display:flex;
      justify-content: center;
      align-items: center;
-     width: 60%;
+     width: 100%;
    }
 
    header .content-wrapper {
@@ -221,9 +221,25 @@ textarea {
 
    .hero-area {
      display: flex;
-     width: 60%;
+     width: 100%;
+     height: 500px;
      justify-content: flex-start;
      flex-flow: row wrap;
+     background: url('../img/person-walking-over-bridge.png') center no-repeat;
+     background-size: cover;
+   }
+
+   .hero-area h1 {
+     color: #e2e3ed;
+   }
+
+   img {
+     width: 100%;
+   }
+
+   figure {
+     width: 70%;
+     margin: 0;
    }
 
    aside {
@@ -234,9 +250,11 @@ textarea {
     background-color: #527158;
    }
 
+
    aside h1, aside h4, aside p {
      color: #e2e3ed;
    }
+
    aside .form {
     margin-top: 30px;
   }
@@ -267,8 +285,12 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-     background: url('img/camping-supplies.jpg') center no-repeat;
+     background: url('../img/camping-supplies.jpg') center no-repeat;
      background-size: cover;
+   }
+
+   .features h2, .features p {
+     color: #e2e3ed;
    }
 
    .features h2 {
@@ -481,7 +503,7 @@ textarea {
 /*HEADER*/
 header, footer {
   display: flex;
-  width: 99%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -489,6 +511,7 @@ figure {
   display: flex;
   width: 37%;
   padding-top: 46px;
+  padding-left: 30px;
 }
 
 header .content-wrapper {
@@ -552,7 +575,11 @@ aside .content-wrapper .form {
 }
 
 .reviews article div {
-  width: 45%;
+  width: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews .content-wrapper h2 {
@@ -562,10 +589,20 @@ aside .content-wrapper .form {
   align-items: flex-start;
 }
 
+.responsive {
+  width: 150%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /*FOOTER*/
 footer .content-wrapper {
   width: 100%;
   margin: 100px 0;
+  padding-right: 100px;
 }
 
 .footer-content {
@@ -673,6 +710,10 @@ aside .content-wrapper .form {
 /*REVIEWS*/
 .reviews article div {
   width: 42%;
+}
+
+.written-review {
+  padding-top: 30px;
 }
 
 /*ABOUT*/
