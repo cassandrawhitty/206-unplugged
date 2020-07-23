@@ -97,6 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
    /***** General Styles *****/
 
    html{
@@ -104,8 +105,8 @@ textarea {
    }
 
    body {
-     font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     font-family: 'Open Sans', sans-serif;
      color: #e2e3ed;
      text-align: left;
    }
@@ -164,16 +165,13 @@ textarea {
 
    header,
    footer {
+    background-color: #202322;
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background-color: #202322;
-   }
+    flex-flow: row wrap;
 
-  header {
-    padding: 15px 0;
-  }
+   }
 
   header .content-wrapper {
     margin: 0;
@@ -266,7 +264,9 @@ textarea {
    /* Hero Area */
 
     .hero-area {
-     background: url('../img/person-walking-over-bridge.png') center no-repeat;
+     background: url('../img/person-walking-over-bridge.png');
+     background-size: cover;
+     background-position: center;
      min-height: 500px;
      display: flex;
      justify-content: center;
@@ -277,7 +277,7 @@ textarea {
      font-size: 2.25em;
      font-family: 'Poppins', Helvetica, Arial, sans-serif;
      font-weight: 500;
-     line-height: 1.2em;
+     line-height: 1.2;
    }
 
   /* Aside */
@@ -319,8 +319,9 @@ textarea {
   /* Features */
 
    .features {
-     background: url('../img/camping-supplies.jpg') center no-repeat;
+     background: url('../img/camping-supplies.jpg');
      background-size: cover;
+     background-position: center;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -368,7 +369,7 @@ textarea {
 
     .reviews h2 {
       margin-bottom: 40px;
-      line-height: 1em;
+      line-height: 1;
     }
 
    .reviews h3 {
@@ -534,8 +535,10 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/*****TABLET STYLES*****/
+
 @media only screen and (min-width: 768px) {
+
+/*****TABLET STYLES*****/
 
 /*GENERAL STYLE*/
 .content-wrapper {
@@ -543,47 +546,49 @@ textarea {
   margin: 100px 0;
 }
 
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
 /*HEADER*/
-header, footer {
-  display: flex;
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+}
+
+header .content-wrapper {
   width: 100%;
   justify-content: space-between;
 }
 
-figure {
-  display: flex;
-  width: 37%;
-  padding-top: 46px;
-  padding-left: 30px;
+header figure {
+  width: 30%;
 }
 
-header .content-wrapper {
-  display: flex;
-  justify-content: flex-end;
+header nav {
   width: 20%;
+}
+
+header nav ul {
+  justiofy-content: space-between;
 }
 
 .header-divider {
   display: none;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  padding-right: 60px;
-  padding-top: 46px;
-}
-
-/*INFORMATION*/
+/*HERO AREA*/
 
 aside .content-wrapper {
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -593,11 +598,11 @@ aside .content-wrapper .form {
   margin: 0;
 }
 
-.information h1 {
-  width: 55%;
-}
-
 /*FEATURES*/
+
+.features h2 {
+  margin-bottom: 20px;
+}
 
 .features article {
   display: flex;
@@ -608,7 +613,11 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
+}
+
+.features i {
+  margin-bottom: 30px;
 }
 
 /*REVIEWS*/
@@ -617,71 +626,53 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
-.reviews article div {
-  width: 53%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.reviews h2 {
+  width: 85%;
 }
 
-.reviews .content-wrapper h2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+.reviews article figure, .reviews article div {
+  width: 49%;
 }
 
-.responsive {
-  width: 150%;
-  padding-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.reviews h3 {
+  width: 75%;
+  margin: 0;
 }
 
 /*FOOTER*/
+
 footer .content-wrapper {
-  width: 100%;
+  width: 65%;
   margin: 100px 0;
-  padding-right: 100px;
 }
 
-.footer-content {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-footer {
-  display: flex;
-  flex-flow: column;
-}
-
-footer .social-icons {
+footer .footer-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
 }
 
-footer .social-icons p {
-  background-color: #527158;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .contact {
+  margin-bottom: 0;
 }
 
-footer .social-icons p i {
-  font-size: 1.3125em;
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
 }
 
-.copyright {
-  margin: 10px;
+footer p {
+  line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  width: 100%;
 }
 
 
@@ -728,26 +719,56 @@ footer .social-icons p i {
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq h1 {
   width: 100%;
 }
 
-/*****DESKTOP STYLES*****/
+.faq h4,
+.faq p {
+  font-size: 0.875em;
+  line-height: 1.125;
+}
+
+
 @media only screen and (min-width: 1200px) {
 
+/*****DESKTOP STYLES*****/
+
 /*BASE*/
+
+header {
+  padding: 15px 0;
+}
+
 .content-wrapper {
   max-width: 960px;
 }
 
-/*INFORMATION*/
-.information h1 {
-  width: 60%;
+h2 {
+  font-size: 2.25em;
 }
 
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
+/*Hero*/
+
+.hero-area h1 {
+  font-size: 3.75em;
+  width: 80%;
+}
+
+/* Aside */
 aside .content-wrapper {
   justify-content: space-around;
 }
@@ -757,12 +778,12 @@ aside .content-wrapper .form {
   width: 30%;
 }
 
-aside .content-wrapper .form {
-  display: flex;
-  flex-flow: column;
+.form-description p {
+  font-size: 1.125em;
 }
 
 /*FEATURES*/
+
 .features h2 {
  width: 90%;
 }
@@ -772,18 +793,40 @@ aside .content-wrapper .form {
 }
 
 /*REVIEWS*/
+
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
 .reviews article div {
   width: 42%;
 }
 
-.written-review {
-  padding-top: 30px;
+footer h4 {
+  font-size: 1.875em;
 }
 
 /*ABOUT*/
 
 .mission h1, .contact-section .content-wrapper h2 {
   width: 95%;
+}
+
+/* FAQ */
+
+.faq h1 {
+  font-size: 3em;
+}
+
+.faq h2 {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 
 
