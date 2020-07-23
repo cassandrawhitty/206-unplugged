@@ -106,11 +106,15 @@ textarea {
    body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     color: #e2e3ed;
+     text-align: left;
    }
 
    ul,
    ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
    }
 
    a {
@@ -120,22 +124,39 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
-     font-size: 2em;
+     font-weight: 500;
+     font-size: 1.875em;
+     margin: 0;
    }
 
    h3,
    h4 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1em;
+     font-size: 1.125em;
+     margin: 20px 0;
+     font-weight: 500;
    }
 
    p {
-    line-height: 22px;
+     font-size: .875em;
+    line-height: 1.285em;
    }
 
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin: 0;
+   }
 
    address {
     font-style: normal;
+   }
+
+   .content-wrapper {
+     width: 90%;
+     margin: 50px 0;
    }
 
 
@@ -147,9 +168,74 @@ textarea {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: #202322;
    }
+
+  header {
+    padding: 15px 0;
+  }
+
+  header .content-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .header-divider {
+    background: #3a3a3a;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+
+  header nav {
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header nav ul {
+    width: 100%;
+    diplay: flex;
+    justify-content: space-around;
+  }
+
+  header nav ul li {
+    font-size: 1.125em;
+  }
+
+  footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  }
+
+  footer .contact {
+    margin-bottom: 50px;
+  }
 
   footer .social-icons {
     display: flex;
@@ -171,113 +257,42 @@ textarea {
     font-size: 1.3125em;
 }
 
-   /***** Header Styles *****/
-
-   header {
-     padding: 15px 0;
-   }
-
-   figure {
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-   }
-
-   header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-   }
-
-   .header-divider {
-     width: 100%;
-     height: 1px;
-     margin: 10px 0 20px 0;
-   }
-
-   header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-    padding-right: 30px;
-   }
-
-   header nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-   }
-
-   header nav ul li {
-    display: flex;
-    padding-left: 28px;
-    padding-right: 28px;
-   }
-
-   footer {
-     flex-direction: column;
-   }
+  footer .copyright {
+    margin: 20px 0;
+  }
 
    /***** Mobile Styles - Homepage *****/
-   .content-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 90%;
-      padding: 15px;
-      margin: 0;
-   }
 
-   .responsive {
-     width: 100%;
-     height: auto;
-   }
+   /* Hero Area */
 
-   .hero-area {
-     display: flex;
-     width: 100%;
-     height: 500px;
-     justify-content: flex-start;
-     flex-flow: row wrap;
+    .hero-area {
      background: url('../img/person-walking-over-bridge.png') center no-repeat;
-     background-size: cover;
+     min-height: 500px;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
    }
 
    .hero-area h1 {
-     color: #e2e3ed;
+     font-size: 2.25em;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     line-height: 1.2em;
    }
 
-   img {
-     width: 100%;
-   }
-
-   figure {
-     width: 70%;
-     margin: 0;
-   }
+  /* Aside */
 
    aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: #527158;
-   }
-
-
-   aside h1, aside h4, aside p {
-     color: #e2e3ed;
+     background-color: #527158;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
    }
 
    aside .form {
-    margin-top: 30px;
-  }
+     margin-top: 30px;
+   }
 
   input[type=text] {
     box-sizing: border-box;
@@ -301,25 +316,23 @@ textarea {
     text-transform: uppercase;
   }
 
+  /* Features */
+
    .features {
+     background: url('../img/camping-supplies.jpg') center no-repeat;
+     background-size: cover;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-     background: url('../img/camping-supplies.jpg') center no-repeat;
-     background-size: cover;
-   }
-
-   .features h2, .features p {
-     color: #e2e3ed;
    }
 
    .features h2 {
      margin-bottom: 60px;
    }
 
-    .features article {
-      width: 63%;
-      margin: 30px 0;
+   .features article {
+     width: 63%;
+     margin: 30px 0;
    }
 
    .features .features-items {
@@ -329,7 +342,13 @@ textarea {
       flex-flow: row wrap;
    }
 
+   .features i {
+     font-size: 3.75em;
+     margin-bottom: 40px;
+   }
+
    .features p {
+     text-align: center;
       margin: 0;
    }
 
@@ -338,59 +357,67 @@ textarea {
       margin-bottom: 40px;
 }
 
+  /* Reviews */
+
    .reviews {
+     background-color: #2a423a;
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-flow: row wrap;
-      background-color: #2a423a;
    }
 
     .reviews h2 {
-      color: #e2e3ed;
+      margin-bottom: 40px;
+      line-height: 1em;
     }
 
-   .reviews h3, .reviews p{
-     color: #e2e3ed;
-    flex-basis: 83%;
+   .reviews h3 {
+      width: 55%;
+      margin: 20px 0;
    }
 
    /***** Mobile Styles - About *****/
+
    .mission {
+     background-color: #527158;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      background-color: #527158;
+   }
+
+   .map-container figure {
+     width: 100%;
+     height: 0;
+     padding-bottom: 125%;
+     overflow: hidden;
+     position: relative;
+   }
+
+   .map-container iframe {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
    }
 
    .contact-section {
+     background-color: #527158;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      background-color: #527158;
    }
 
-  .map-container {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-  }
+    .contact-information p {
+      margin: 0;
+    }
 
     /***** Mobile Styles - FAQ *****/
 
     .faq {
+      background-color: #527158;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -398,38 +425,25 @@ textarea {
     }
 
     .faq .content-wrapper {
+      margin: 50px 0 0 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      background-color: #527158;
     }
 
-   /***** Footer *****/
+    .faq h2 {
+      margin-bottom: 40px;
+      line-height: 1em;
+    }
 
-   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-   }
+    .faq-content {
+      margin-bottom: 50px;
+    }
 
-   footer p {
-    margin: 0;
-    color: #c4c4c4;
-   }
-
-   footer h4 {
-     color: #ffffff;
-   }
-
-   footer .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-   }
+    .faq-content h4 {
+      line-height: 1.333em;
+    }
 
 
 /* ==========================================================================
