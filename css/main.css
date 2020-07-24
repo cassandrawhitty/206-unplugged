@@ -209,14 +209,12 @@ textarea {
 
   header nav ul {
     width: 100%;
-    diplay: flex;
+    display: flex;
     justify-content: space-around;
   }
 
   header nav ul li {
     font-size: 1.125em;
-    display: inline;
-    padding-left: 20px;
   }
 
   footer {
@@ -583,7 +581,7 @@ header nav {
 }
 
 header nav ul {
-  justiofy-content: space-between;
+  justify-content: space-between;
 }
 
 .header-divider {
