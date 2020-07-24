@@ -215,11 +215,17 @@ textarea {
 
   header nav ul li {
     font-size: 1.125em;
+    display: inline;
+    padding-left: 20px;
   }
 
   footer {
     text-align: center;
     flex-direction: column;
+  }
+
+  footer h4 {
+    width: 100%;
   }
 
   footer p {
@@ -239,6 +245,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
   footer .social-icons p {
@@ -264,7 +271,7 @@ textarea {
    /* Hero Area */
 
     .hero-area {
-     background: url('../img/person-walking-over-bridge.png');
+     background: url('../img/unplugged-retreat.jpg');
      background-size: cover;
      background-position: center;
      min-height: 500px;
